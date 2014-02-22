@@ -1,0 +1,16 @@
+<ion-view title="'Silo'">
+    <ion-content has-header="false" has-tabs="true" padding="true">
+
+        <a ng-click="newQuote()"><img src="assets/img/logo_silo.png" class="ionic-logo"  /></a>
+
+        <p>
+            {{randomQuote}}
+        </p>
+
+        <div ng-controller="AppController">
+
+            <p>version {{appversion}}</p>
+
+        </div>
+    </ion-content>
+</ion-view>

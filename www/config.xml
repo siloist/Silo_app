@@ -5,10 +5,12 @@
         An app dedicated to Silo.
     </description>
     <author email="stefano.cecere@krur.com" href="http://krur.com">
-        Stefano Cecere
+        Stefano Cecere @krur
     </author>
     <content src="index.html" />
     <access origin="*" />
     <preference name="fullscreen" value="true" />
-    <preference name="webviewbounce" value="true" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="UIWebViewBounce" value="false" />
+    <preference name="DisallowOverscroll" value="true" />
 </widget>

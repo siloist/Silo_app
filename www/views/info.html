@@ -1,0 +1,29 @@
+<ion-view title="titolo">
+
+    <ion-content has-header="false" has-tabs="true" padding="true">
+
+        <h1>{{ 'about' | translate }} Silo</h1>
+
+
+        <div class="row">
+            <div class="col">
+                <p>Silo<br/>
+                    Mario Rodríguez Cobos<br/>
+                    6 jan 1938 - 16 sep 2010
+                </p>
+            </div>
+            <div class="col">
+                <img src="assets/img/silo.png"/>
+            </div>
+        </div>
+
+        <h1>{{ 'language' | translate}}:</h1>
+
+        <div ng-controller="LangController">
+            <button ng-click="changeLanguage('en')" class="button">{{ 'lang_en' | translate }}</button>
+            <button ng-click="changeLanguage('es')" class="button">{{ 'lang_es' | translate }}</button>
+            <button ng-click="changeLanguage('it')" class="button">{{ 'lang_it' | translate }}</button>
+        </div>
+
+    </ion-content>
+</ion-view>
