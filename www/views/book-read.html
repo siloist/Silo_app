@@ -1,0 +1,14 @@
+<ion-view title="book.title">
+    <ion-nav-bar type="bar-positive"
+                 animation="nav-title-slide-ios7"
+                 back-button-type="button-icon button-clear"
+                 back-button-icon="ion-ios7-arrow-back"></ion-nav-bar>
+
+    <ion-content has-header="true" padding="true">
+        <p>{{ book.description }}</p>
+
+        <p>{{ 'language' | translate}}: {{ 'lang_' + book.lang | translate}}</p>
+
+        <p><a class="button button-small icon ion-arrow-left-b" href="#/tab/books"> All Books</a></p>
+    </ion-content>
+</ion-view>

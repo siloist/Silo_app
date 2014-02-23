@@ -15,16 +15,24 @@ angular.module('silo.controllers', [])
         $scope.titolo = $translate.instant('BOOKS');
     })
 
-    .controller('LangController', function ($scope, $translate) {
-        $scope.changeLanguage = function (key) {
+    .controller('LangController', function($scope, $translate) {
+        $scope.changeLanguage = function(key) {
             $translate.use(key);
         };
     })
 
-    .controller('BookIndexController', function($scope, BookService) {
-       // $scope.books = BookService.all();
-       // $scope.$apply();
+    .controller('PlaceIndexController', function($scope, PlaceService) {
+        PlaceService.getAllPlaces(function(data) {
+            $scope.places = data;
+        });
 
+    })
+
+    .controller('PlaceDetailController', function($scope, $stateParams, PlaceService) {
+        $scope.place = PlaceService.get($stateParams.placeId);
+    })
+
+    .controller('BookIndexController', function($scope, BookService) {
         BookService.all(function(books) {
             $scope.books = books;
             $scope.$apply();
@@ -39,6 +47,14 @@ angular.module('silo.controllers', [])
         });
 
         //$scope.book = BookService.get($stateParams.bookId);
+    })
+
+    .controller('BookReadController', function($scope, $stateParams, BookService) {
+        BookService.get($stateParams.bookId, function(book) {
+            $scope.book = book;
+            $scope.$apply();
+        });
+
     })
 
     .controller('MediaIndexController', function($scope, MediaService) {

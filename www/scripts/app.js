@@ -37,7 +37,7 @@ angular.module('siloApp', ['ionic', 'ngTouch', 'pascalprecht.translate', 'silo.s
                 url: '/books',
                 views: {
                     'books-tab': {
-                        templateUrl: 'views/book-index.html',
+                        templateUrl: 'views/books.html',
                         controller: 'BookIndexController'
                     }
                 }
@@ -53,11 +53,21 @@ angular.module('siloApp', ['ionic', 'ngTouch', 'pascalprecht.translate', 'silo.s
                 }
             })
 
+            .state('tab.book-read', {
+                url: '/read/:bookId',
+                views: {
+                    'books-tab': {
+                        templateUrl: 'views/book-read.html',
+                        controller: 'BookReadController'
+                    }
+                }
+            })
+
             .state('tab.media-index', {
                 url: '/media',
                 views: {
                     'media-tab': {
-                        templateUrl: 'views/media-index.html',
+                        templateUrl: 'views/medias.html',
                         controller: 'MediaIndexController'
                     }
                 }
@@ -73,11 +83,21 @@ angular.module('siloApp', ['ionic', 'ngTouch', 'pascalprecht.translate', 'silo.s
                 }
             })
 
-            .state('tab.map', {
-                url: '/map',
+            .state('tab.places', {
+                url: '/places',
                 views: {
-                    'map-tab': {
-                        templateUrl: 'views/map.html'
+                    'places-tab': {
+                        templateUrl: 'views/places.html',
+                        controller: 'PlaceIndexController'
+                    }
+                }
+            })
+            .state('tab.place-detail', {
+                url: '/place/:placeId',
+                views: {
+                    'media-tab': {
+                        templateUrl: 'views/place-detail.html',
+                        controller: 'PlaceDetailController'
                     }
                 }
             })

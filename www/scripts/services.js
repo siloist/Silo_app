@@ -120,7 +120,7 @@ angular.module('silo.services', [])
         var media = [
             { id: 0, title: 'Media 1', description: 'Description media 1' },
             { id: 1, title: 'Media 2', description: 'Description media 2' },
-            { id: 2, title: 'Media 3', description: 'Description media 3' },
+            { id: 2, title: 'Media 3', description: 'Description media 3' }
         ];
 
         return {
@@ -129,6 +129,24 @@ angular.module('silo.services', [])
             },
             get: function(bookId) {
                 return media[bookId];
+            }
+        }
+    })
+
+    .factory('PlaceService', function($http) {
+        var places = [];
+        //console.log("PlaceService");
+        return {
+            getAllPlaces: function(callback) {
+                $http.get('assets/data/places.json').success(
+                    function(data) {
+                        places = data;
+                        callback(data);
+                    }
+                );
+            },
+            get: function(placeId) {
+                return places[placeId - 1];
             }
         }
     });

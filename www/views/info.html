@@ -11,6 +11,8 @@
                     Mario Rodríguez Cobos<br/>
                     6 jan 1938 - 16 sep 2010
                 </p>
+
+                <p><a href="http://www.silo.net" target="_blank">www.silo.net</a></p>
             </div>
             <div class="col">
                 <img src="assets/img/silo.png"/>
@@ -20,9 +22,11 @@
         <h1>{{ 'language' | translate}}:</h1>
 
         <div ng-controller="LangController">
-            <button ng-click="changeLanguage('en')" class="button">{{ 'lang_en' | translate }}</button>
-            <button ng-click="changeLanguage('es')" class="button">{{ 'lang_es' | translate }}</button>
-            <button ng-click="changeLanguage('it')" class="button">{{ 'lang_it' | translate }}</button>
+            <div class="button-bar">
+                <button ng-click="changeLanguage('en')" class="button">{{ 'lang_en' | translate }}</button>
+                <button ng-click="changeLanguage('es')" class="button">{{ 'lang_es' | translate }}</button>
+                <button ng-click="changeLanguage('it')" class="button">{{ 'lang_it' | translate }}</button>
+            </div>
         </div>
 
     </ion-content>

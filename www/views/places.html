@@ -1,0 +1,21 @@
+<ion-view title="'Places'">
+
+    <ion-nav-bar type="bar-positive"
+                 animation="nav-title-slide-ios7"
+            ></ion-nav-bar>
+
+    <ion-content has-header="true" has-tabs="true">
+
+        <ion-list>
+
+            <ion-item ng-repeat="place in places" type="item-text-wrap" href="#/tab/place/{{place.uid}}">
+                <h3>{{place.title}}</h3>
+
+                <p>{{place.loc}} {{place.country}}</p>
+
+            </ion-item>
+
+        </ion-list>
+
+    </ion-content>
+</ion-view>
