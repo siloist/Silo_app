@@ -1,6 +1,10 @@
 var translations_it = {
     about: 'Info su',
+    home: 'Inizio',
     books: 'Libri',
+    media: 'Media',
+    places: 'Luoghi',
+    options: 'Opzioni',
     language: 'Lingua',
     lang_en: 'inglese',
     lang_es: 'spagnolo',

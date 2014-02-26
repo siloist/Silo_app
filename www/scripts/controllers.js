@@ -1,7 +1,31 @@
 angular.module('silo.controllers', [])
 
-    .controller('AppController', function($scope, AppService) {
+    .controller('AppController', function($scope, $window, AppService) {
         $scope.appversion = AppService.appversion();
+
+        $scope.closeSideMenu = function() {
+            $scope.sideMenuController.close();
+        };
+
+        $scope.menuButtons = [
+            {
+                type: 'button-dark',
+                content: '<i class="icon ion-navicon"></i>',
+                tap: function(e) {
+                    $scope.sideMenuController.toggleLeft();
+                }
+            }
+        ];
+        $scope.backButtons = [
+            {
+                type: 'button-dark',
+                content: '<i class="icon ion-ios7-arrow-back"></i>',
+                tap: function(e) {
+                    $window.history.back();
+                }
+            }
+        ];
+
     })
 
     .controller('HomeController', function($scope, AppService, $translate) {
@@ -9,12 +33,12 @@ angular.module('silo.controllers', [])
         $scope.newQuote = function() {
             $scope.randomQuote = AppService.randomQuote();
         };
-        $scope.curlang =  $translate.use();
+        $scope.curlang = $translate.use();
     })
 
     .controller('InfoController', function($scope, BookService, $translate) {
         $scope.titolo = $translate.instant('BOOKS');
-        $scope.curlang =  $translate.use();
+        $scope.curlang = $translate.use();
     })
 
     .controller('LangController', function($scope, $translate) {
@@ -27,7 +51,6 @@ angular.module('silo.controllers', [])
         PlaceService.getAllPlaces(function(data) {
             $scope.places = data;
         });
-
     })
 
     .controller('PlaceDetailController', function($scope, $stateParams, PlaceService) {
@@ -39,7 +62,6 @@ angular.module('silo.controllers', [])
             $scope.books = books;
             $scope.$apply();
         });
-
     })
 
     .controller('BookDetailController', function($scope, $stateParams, BookService) {
@@ -47,7 +69,6 @@ angular.module('silo.controllers', [])
             $scope.book = book;
             $scope.$apply();
         });
-
         //$scope.book = BookService.get($stateParams.bookId);
     })
 

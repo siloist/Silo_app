@@ -1,11 +1,15 @@
 <ion-view title="media.title">
-    <ion-nav-bar type="bar-positive"
-                 animation="nav-title-slide-ios7"
-                 back-button-type="button-icon button-clear"
-                 back-button-icon="ion-ios7-arrow-back"></ion-nav-bar>
+
+    <ion-header-bar
+            ng-controller="AppController"
+            type="bar-dark"
+            title="media.title"
+            left-buttons="backButtons"
+            ></ion-header-bar>
 
     <ion-content has-header="true" padding="true">
-    <p>{{ media.description }}</p>
-    <p><a class="button button-small icon ion-arrow-left-b" href="#/tab/media"> All Media</a></p>
-  </ion-content>
+
+        <p>{{ media.description }}</p>
+
+    </ion-content>
 </ion-view>

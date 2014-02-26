@@ -1,10 +1,13 @@
-<ion-view title="place.title">
-    <ion-nav-bar type="bar-positive"
-                 animation="nav-title-slide-ios7"
-                 back-button-type="button-icon button-clear"
-                 back-button-icon="ion-ios7-arrow-back"></ion-nav-bar>
+<ion-view>
+    <ion-header-bar
+            ng-controller="AppController"
+            type="bar-dark"
+            title="place.title"
+            left-buttons="backButtons"
+            ></ion-header-bar>
 
     <ion-content has-header="true" padding="true">
+
         <p>{{ place.title }}</p>
         <p>{{ place.country }}</p>
         <p>{{ place.loc }}</p>
@@ -12,7 +15,5 @@
         <p>{{ place.email }}</p>
         <p>{{ place.url }}</p>
 
-        <p><a class="button button-small icon ion-arrow-left-b" href="#/tab/places"> All Places</a></p>
-        <br /><br />
     </ion-content>
 </ion-view>

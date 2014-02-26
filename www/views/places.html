@@ -1,14 +1,16 @@
-<ion-view title="'Places'">
+<ion-view>
+    <ion-header-bar
+            ng-controller="AppController"
+            type="bar-dark"
+            title="'Places'"
+            left-buttons="menuButtons"
+            ></ion-header-bar>
 
-    <ion-nav-bar type="bar-positive"
-                 animation="nav-title-slide-ios7"
-            ></ion-nav-bar>
-
-    <ion-content has-header="true" has-tabs="true">
+    <ion-content has-header="true">
 
         <ion-list>
 
-            <ion-item ng-repeat="place in places" type="item-text-wrap" href="#/tab/place/{{place.uid}}">
+            <ion-item ng-repeat="place in places" type="item-text-wrap" href="#/place/{{place.uid}}">
                 <h3>{{place.title}}</h3>
 
                 <p>{{place.loc}} {{place.country}}</p>

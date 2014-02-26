@@ -1,14 +1,16 @@
-<ion-view title="'Books'">
+<ion-view>
+    <ion-header-bar
+            ng-controller="AppController"
+            type="bar-dark"
+            title="'Books'"
+            left-buttons="menuButtons"
+            ></ion-header-bar>
 
-    <ion-nav-bar type="bar-positive"
-                 animation="nav-title-slide-ios7"
-            ></ion-nav-bar>
-
-    <ion-content has-header="true" has-tabs="true">
+    <ion-content has-header="true" has-tabs="false">
 
         <ion-list>
 
-            <ion-item ng-repeat="book in books" type="item-text-wrap" href="#/tab/book/{{book.id}}">
+            <ion-item ng-repeat="book in books" type="item-text-wrap" href="#/book/{{book.id}}">
                 <h3>{{book.title}}</h3>
 
                 <p>{{book.description}}</p>

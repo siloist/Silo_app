@@ -11,15 +11,8 @@
 
     <!-- ionic/angularjs scripts -->
     <script src="vendor/ionic/js/ionic.bundle.min.js"></script>
-    <!--<script src="vendor/ionic/js/ionic.js"></script>-->
-    <!--<script src="vendor/angular/angular.js"></script>-->
-    <!--<script src="vendor/angular/angular-animate.js"></script>-->
-    <!--<script src="vendor/angular/angular-route.js"></script>-->
-    <!--<script src="vendor/angular-touch.min.js"></script>-->
-    <!--<script src="vendor/angular/angular-sanitize.js"></script>-->
-    <!--<script src="vendor/angular-ui/angular-ui-router.js"></script>-->
-    <!--<script src="vendor/ionic/js/ionic-angular.js"></script>-->
 
+    <script src="vendor/angular-touch.min.js"></script>
     <script src="vendor/angular-translate.min.js"></script>
 
     <!-- translations -->
@@ -41,41 +34,43 @@
 
 <ion-side-menus>
     <!-- Center content -->
-    <ion-pane ion-side-menu-content ion-nav-router animation="slide-left-right-ios7">
+    <ion-pane ion-side-menu-content ion-nav-router>
 
-        <ion-nav-view animation="slide-left-right"></ion-nav-view>
+        <ion-nav-view></ion-nav-view>
 
     </ion-pane>
 
     <!-- Left menu -->
     <ion-side-menu side="left" width="200">
-
-        <ion-list>
-            <a class="item item-icon-left" href="#">
-                <i class="icon ion-email"></i>
-                Home
-            </a>
-            <a class="item item-icon-left" href="#">
-                <i class="icon ion-folder"></i>
-                Books
-            </a>
-            <a class="item item-icon-left" href="#">
-                <i class="icon ion-images"></i>
-                Media
-            </a>
-            <a class="item item-icon-left" href="#">
-                <i class="icon ion-map"></i>
-                Places
-            </a>
-            <a class="item item-icon-left" href="#">
-                <i class="icon ion-gear-a"></i>
-                Options
-            </a>
-        </ion-list>
+        <ion-header-bar type="bar-dark" title="'Silo App'">
+        </ion-header-bar>
+        <ion-content has-header="true">
+            <ion-list ng-controller="AppController" ng-click="closeSideMenu()">
+                <a class="item item-icon-left" href="#/home">
+                    <i class="icon ion-home"></i>
+                    {{ 'home' | translate }}
+                </a>
+                <a class="item item-icon-left" href="#/books">
+                    <i class="icon ion-folder"></i>
+                    {{ 'books' | translate }}
+                </a>
+                <a class="item item-icon-left" href="#/media">
+                    <i class="icon ion-images"></i>
+                    {{ 'media' | translate }}
+                </a>
+                <a class="item item-icon-left" href="#/places">
+                    <i class="icon ion-map"></i>
+                    {{ 'places' | translate }}
+                </a>
+                <a class="item item-icon-left" href="#/info">
+                    <i class="icon ion-gear-a"></i>
+                    {{ 'options' | translate }}
+                </a>
+            </ion-list>
+        </ion-content>
     </ion-side-menu>
 
 </ion-side-menus>
 
 </body>
 </html>
-
