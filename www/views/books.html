@@ -6,11 +6,21 @@
             left-buttons="menuButtons"
             ></ion-header-bar>
 
-    <ion-content has-header="true" has-tabs="false">
+    <ion-content  ng-controller="BookIndexController" has-header="true" has-tabs="false">
+
+        <div class="item-input-inset">
+            <label class="item-input-wrapper">
+                <i class="icon ion-ios7-search placeholder-icon"></i>
+                <input type="search" ng-model="query" placeholder="Search">
+            </label>
+            <button class="button button-clear" ng-click="clearFilter()">
+                Cancel
+            </button>
+        </div>
 
         <ion-list>
 
-            <ion-item ng-repeat="book in books" type="item-text-wrap" href="#/book/{{book.id}}">
+            <ion-item ng-repeat="book in books | filter:query" type="item-text-wrap" href="#/book/{{book.id}}">
                 <h3>{{book.title}}</h3>
 
                 <p>{{book.description}}</p>

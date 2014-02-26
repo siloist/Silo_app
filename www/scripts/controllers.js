@@ -9,7 +9,7 @@ angular.module('silo.controllers', [])
 
         $scope.menuButtons = [
             {
-                type: 'button-dark',
+                type: 'button-clear',
                 content: '<i class="icon ion-navicon"></i>',
                 tap: function(e) {
                     $scope.sideMenuController.toggleLeft();
@@ -18,7 +18,7 @@ angular.module('silo.controllers', [])
         ];
         $scope.backButtons = [
             {
-                type: 'button-dark',
+                type: 'button-clear',
                 content: '<i class="icon ion-ios7-arrow-back"></i>',
                 tap: function(e) {
                     $window.history.back();
@@ -66,6 +66,10 @@ angular.module('silo.controllers', [])
             $scope.books = books;
             $scope.$apply();
         });
+
+        $scope.clearFilter = function() {
+            $scope.query = '';
+        };
     })
 
     .controller('BookDetailController', function($scope, $stateParams, BookService) {
