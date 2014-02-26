@@ -29,6 +29,7 @@ angular.module('silo.controllers', [])
     })
 
     .controller('HomeController', function($scope, AppService, $translate) {
+        $scope.sideMenuController.close();
         $scope.randomQuote = AppService.randomQuote();
         $scope.newQuote = function() {
             $scope.randomQuote = AppService.randomQuote();
@@ -37,6 +38,7 @@ angular.module('silo.controllers', [])
     })
 
     .controller('InfoController', function($scope, BookService, $translate) {
+        $scope.sideMenuController.close();
         $scope.titolo = $translate.instant('BOOKS');
         $scope.curlang = $translate.use();
     })
@@ -48,6 +50,7 @@ angular.module('silo.controllers', [])
     })
 
     .controller('PlaceIndexController', function($scope, PlaceService) {
+        $scope.sideMenuController.close();
         PlaceService.getAllPlaces(function(data) {
             $scope.places = data;
         });
@@ -58,6 +61,7 @@ angular.module('silo.controllers', [])
     })
 
     .controller('BookIndexController', function($scope, BookService) {
+        $scope.sideMenuController.close();
         BookService.all(function(books) {
             $scope.books = books;
             $scope.$apply();
@@ -81,6 +85,7 @@ angular.module('silo.controllers', [])
     })
 
     .controller('MediaIndexController', function($scope, MediaService) {
+        $scope.sideMenuController.close();
         $scope.medias = MediaService.all();
     })
 

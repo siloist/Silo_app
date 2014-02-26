@@ -103,7 +103,7 @@ angular.module('silo.services', [])
 
         return {
             appversion: function() {
-                console.log('AppService.appversion()'  + $translate.use());
+                // console.log('AppService.appversion()'  + $translate.use());
                 return '0.0.1' + $translate.use();
             },
             randomQuote: function() {
