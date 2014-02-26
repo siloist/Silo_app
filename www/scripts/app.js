@@ -1,5 +1,18 @@
 angular.module('siloApp', ['ionic', 'ngTouch', 'pascalprecht.translate', 'fsCordova', 'silo.services', 'silo.controllers'])
 
+    .run(function($rootScope, $window) {
+        $rootScope.windowWidth = $window.outerWidth;
+        if ($rootScope.windowWidth < 768) {
+            $rootScope.isTablet = false;
+        } else {
+            $rootScope.isTablet = true;
+        }
+        angular.element($window).bind('resize', function() {
+            $rootScope.windowWidth = $window.outerWidth;
+            $rootScope.$apply('windowWidth');
+        });
+    })
+
     .config(function($translateProvider) {
         $translateProvider.translations('en', translations_en);
         $translateProvider.translations('es', translations_es);
