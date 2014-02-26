@@ -54,6 +54,10 @@ angular.module('silo.controllers', [])
         PlaceService.getAllPlaces(function(data) {
             $scope.places = data;
         });
+
+        $scope.clearFilter = function() {
+            $scope.query = '';
+        };
     })
 
     .controller('PlaceDetailController', function($scope, $stateParams, PlaceService) {
