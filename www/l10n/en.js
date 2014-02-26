@@ -13,4 +13,3 @@ var translations_en = {
 
 var quotes_en = ["Hi there."
 ];
-    {{ 'options' | translate }}
