@@ -3,3 +3,20 @@
     line-height:130%;
     text-align:justify;
 }
+
+.menu.menu-left {
+    background: #444;
+}
+
+.menu .scroll-content {
+    background: #444;
+}
+.menu .item {
+    background: #444;
+    color: #fff;
+    border: none;
+}
+
+.menu .item.active {
+    background: #666;
+}
