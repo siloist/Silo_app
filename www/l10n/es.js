@@ -1,4 +1,4 @@
-var $translations_es = {
+var translations_es = {
     about: 'Acerca de ',
     books: 'Libros',
     language: 'Idioma',
@@ -6,3 +6,6 @@ var $translations_es = {
     lang_es: 'espanol',
     lang_it: 'italiano'
 };
+
+var quotes_es = ["Ola Amigo."
+];

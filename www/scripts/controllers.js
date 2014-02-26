@@ -4,15 +4,17 @@ angular.module('silo.controllers', [])
         $scope.appversion = AppService.appversion();
     })
 
-    .controller('HomeController', function($scope, AppService) {
+    .controller('HomeController', function($scope, AppService, $translate) {
         $scope.randomQuote = AppService.randomQuote();
         $scope.newQuote = function() {
             $scope.randomQuote = AppService.randomQuote();
         };
+        $scope.curlang =  $translate.use();
     })
 
     .controller('InfoController', function($scope, BookService, $translate) {
         $scope.titolo = $translate.instant('BOOKS');
+        $scope.curlang =  $translate.use();
     })
 
     .controller('LangController', function($scope, $translate) {
@@ -63,4 +65,10 @@ angular.module('silo.controllers', [])
 
     .controller('MediaDetailController', function($scope, $stateParams, MediaService) {
         $scope.media = MediaService.get($stateParams.mediaId);
+    })
+
+    .controller('LocationController', function($scope, CordovaService) {
+        CordovaService.ready.then(function() {
+            // Cordova is ready
+        });
     });

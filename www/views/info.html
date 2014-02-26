@@ -21,6 +21,7 @@
 
         <h1>{{ 'language' | translate}}:</h1>
 
+        cur lang: {{ curlang }}
         <div ng-controller="LangController">
             <div class="button-bar">
                 <button ng-click="changeLanguage('en')" class="button">{{ 'lang_en' | translate }}</button>

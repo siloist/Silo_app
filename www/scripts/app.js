@@ -1,9 +1,9 @@
-angular.module('siloApp', ['ionic', 'ngTouch', 'pascalprecht.translate', 'silo.services', 'silo.controllers'])
+angular.module('siloApp', ['ionic', 'ngTouch', 'pascalprecht.translate', 'fsCordova', 'silo.services', 'silo.controllers'])
 
     .config(function($translateProvider) {
-        $translateProvider.translations('en', $translations_en);
-        $translateProvider.translations('es', $translations_es);
-        $translateProvider.translations('it', $translations_it);
+        $translateProvider.translations('en', translations_en);
+        $translateProvider.translations('es', translations_es);
+        $translateProvider.translations('it', translations_it);
         $translateProvider.preferredLanguage('en');
         // console.log("$translateProvider initialized");
     })
