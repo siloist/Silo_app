@@ -1,4 +1,6 @@
 var translations_es = {
+    search: 'Buscar',
+    cancel: 'Reset',
     about: 'Acerca de ',
     home: 'Inicio',
     books: 'Libros',

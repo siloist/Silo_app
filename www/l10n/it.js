@@ -1,4 +1,6 @@
 var translations_it = {
+    search: 'Cerca',
+    cancel: 'Annulla',
     about: 'Info su',
     home: 'Inizio',
     books: 'Libri',

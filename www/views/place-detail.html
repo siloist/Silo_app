@@ -8,12 +8,28 @@
 
     <ion-content has-header="true" padding="true">
 
-        <p>{{ place.title }}</p>
-        <p>{{ place.country }}</p>
-        <p>{{ place.loc }}</p>
-        <p>{{ place.contact }}</p>
-        <p>{{ place.email }}</p>
-        <p>{{ place.url }}</p>
+        <div class="card">
+            <div class="item item-text-wrap">
+                <p>{{ place.title }}</p>
 
+                <p>{{ place.country }}</p>
+
+                <p>{{ place.loc }}</p>
+
+                <p>{{ place.contact }}</p>
+
+                <p>{{ place.email }}</p>
+
+                <p>{{ place.url }}</p>
+            </div>
+        </div>
+
+
+        <app-map style="height:300px;margin:12px;"
+                 center="coordinates"
+                 zoom="10"
+                 markers="whoiswhere"
+                >
+        </app-map>
     </ion-content>
 </ion-view>

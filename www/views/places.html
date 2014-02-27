@@ -2,19 +2,27 @@
     <ion-header-bar
             ng-controller="AppController"
             type="bar-dark"
-            title="'Places'"
+            title="'places' | translate"
             left-buttons="menuButtons"
             ></ion-header-bar>
 
-    <ion-content ng-controller="PlaceIndexController" has-header="true">
+    <div class="bar bar-subheader">
+        <div class="button-bar">
+            <a class="button">All</a>
+            <a class="button">Parks</a>
+            <a class="button">Communities</a>
+        </div>
+    </div>
+
+    <ion-content ng-controller="PlaceIndexController" has-header="true" has-subheader="true" has-footer=false">
 
         <div class="item-input-inset">
             <label class="item-input-wrapper">
                 <i class="icon ion-ios7-search placeholder-icon"></i>
-                <input type="search" ng-model="query" placeholder="Search">
+                <input type="search" ng-model="query" placeholder="{{ 'search' | translate }}">
             </label>
             <button class="button button-clear" ng-click="clearFilter()">
-                Cancel
+                {{ 'cancel' | translate }}
             </button>
         </div>
 
@@ -30,4 +38,5 @@
         </ion-list>
 
     </ion-content>
+
 </ion-view>

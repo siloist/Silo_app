@@ -1,4 +1,6 @@
 var translations_en = {
+    search: 'Search',
+    cancel: 'Cancel',
     about: 'About',
     home: 'Home',
     books: 'Books',

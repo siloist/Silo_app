@@ -1,4 +1,4 @@
-angular.module('siloApp', ['ionic', 'ngTouch', 'pascalprecht.translate', 'fsCordova', 'silo.services', 'silo.controllers'])
+angular.module('siloApp', ['ionic', 'ngTouch', 'pascalprecht.translate', 'fsCordova', 'silo.services', 'silo.controllers', 'silo.directives'])
 
     .run(function($rootScope, $window) {
         $rootScope.windowWidth = $window.outerWidth;

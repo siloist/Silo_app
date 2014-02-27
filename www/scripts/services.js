@@ -132,7 +132,7 @@ angular.module('silo.services', [])
 
     .factory('PlaceService', function($http) {
         var places = [];
-        //console.log("PlaceService");
+        console.log("PlaceService call");
         return {
             getAllPlaces: function(callback) {
                 $http.get('assets/data/places.json').success(
@@ -143,6 +143,7 @@ angular.module('silo.services', [])
                 );
             },
             get: function(placeId) {
+                // console.log("PlaceService get " + placeId);
                 return places[placeId - 1];
             }
         }

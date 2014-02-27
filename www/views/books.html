@@ -2,7 +2,7 @@
     <ion-header-bar
             ng-controller="AppController"
             type="bar-dark"
-            title="'Books'"
+            title="'books' | translate"
             left-buttons="menuButtons"
             ></ion-header-bar>
 
@@ -11,10 +11,10 @@
         <div class="item-input-inset">
             <label class="item-input-wrapper">
                 <i class="icon ion-ios7-search placeholder-icon"></i>
-                <input type="search" ng-model="query" placeholder="Search">
+                <input type="search" ng-model="query" placeholder="{{ 'search' | translate }}">
             </label>
             <button class="button button-clear" ng-click="clearFilter()">
-                Cancel
+                {{ 'cancel' | translate }}
             </button>
         </div>
 
