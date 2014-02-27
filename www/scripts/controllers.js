@@ -1,7 +1,15 @@
 angular.module('silo.controllers', [])
 
-    .controller('AppController', function($scope, $window, AppService) {
+    .controller('AppController', function($scope, $rootScope, $window, $location, AppService) {
         $scope.appversion = AppService.appversion();
+
+        $scope.goToPage = function(page) {
+            // console.log($rootScope.isTablet);
+            if (!$rootScope.isTablet) {
+                $scope.sideMenuController.close();
+            }
+            $location.url('/' + page);
+        };
 
         $scope.closeSideMenu = function() {
             $scope.sideMenuController.close();
@@ -28,11 +36,7 @@ angular.module('silo.controllers', [])
 
     })
 
-    .controller('HomeController', function($scope, AppService, $rootScope, $translate) {
-//        console.log($rootScope.isTablet);
-        if (!$rootScope.isTablet) {
-            $scope.sideMenuController.close();
-        }
+    .controller('HomeController', function($scope, AppService, $translate) {
         $scope.randomQuote = AppService.randomQuote();
         $scope.newQuote = function() {
             $scope.randomQuote = AppService.randomQuote();
@@ -40,24 +44,16 @@ angular.module('silo.controllers', [])
         $scope.curlang = $translate.use();
     })
 
-    .controller('InfoController', function($scope, BookService, $rootScope, $translate) {
-        if (!$rootScope.isTablet) {
-            $scope.sideMenuController.close();
-        }
+    .controller('OptionsController', function($scope, BookService, $translate) {
         $scope.titolo = $translate.instant('BOOKS');
         $scope.curlang = $translate.use();
-    })
-
-    .controller('LangController', function($scope, $translate) {
         $scope.changeLanguage = function(key) {
             $translate.use(key);
+            $scope.curlang = key;
         };
     })
 
-    .controller('PlaceIndexController', function($scope, $rootScope, PlaceService) {
-        if (!$rootScope.isTablet) {
-            $scope.sideMenuController.close();
-        }
+    .controller('PlaceIndexController', function($scope, PlaceService) {
         PlaceService.getAllPlaces(function(data) {
             $scope.places = data;
         });
@@ -70,7 +66,7 @@ angular.module('silo.controllers', [])
     .controller('PlaceDetailController', function($scope, $stateParams, PlaceService, $ionicPlatform, $location) {
         $scope.place = PlaceService.get($stateParams.placeId);
 
-        console.log("lat:" +  $scope.place.lat + " lon: " + $scope.place.lon);
+        console.log("lat:" + $scope.place.lat + " lon: " + $scope.place.lon);
         // init gps array
         $scope.whoiswhere = [];
         $scope.coordinates = { lat: $scope.place.lat, lon: $scope.place.lon };
@@ -96,7 +92,7 @@ angular.module('silo.controllers', [])
             // some points of interest to show on the map
             // to be user as markers, objects should have "lat", "lon", and "name" properties
             $scope.whoiswhere = [
-                { "name":  $scope.place.title, "lat": $scope.coordinates.lat, "lon": $scope.coordinates.lon },
+                { "name": $scope.place.title, "lat": $scope.coordinates.lat, "lon": $scope.coordinates.lon },
             ];
 
         });
@@ -104,10 +100,7 @@ angular.module('silo.controllers', [])
 
     })
 
-    .controller('BookIndexController', function($scope, $rootScope, BookService) {
-        if (!$rootScope.isTablet) {
-            $scope.sideMenuController.close();
-        }
+    .controller('BookIndexController', function($scope, BookService) {
         BookService.all(function(books) {
             $scope.books = books;
             $scope.$apply();
@@ -134,10 +127,7 @@ angular.module('silo.controllers', [])
 
     })
 
-    .controller('MediaIndexController', function($scope, $rootScope, MediaService) {
-        if (!$rootScope.isTablet) {
-            $scope.sideMenuController.close();
-        }
+    .controller('MediaIndexController', function($scope, MediaService) {
         $scope.medias = MediaService.all();
     })
 

@@ -1,26 +1,27 @@
 <ion-header-bar type="bar-dark" title="'Silo App'">
 </ion-header-bar>
-<ion-content has-header="true">
-    <ion-list ng-controller="AppController">
-        <a class="item item-icon-left" href="#/home">
+<ion-content has-header="true" ng-controller="AppController">
+    <ion-list>
+        <a ng-click="goToPage('home')" class="item item-icon-left" href="">
             <i class="icon ion-home"></i>
             {{ 'home' | translate }}
         </a>
-        <a class="item item-icon-left" href="#/books">
+        <a ng-click="goToPage('books')" class="item item-icon-left" href="">
             <i class="icon ion-folder"></i>
             {{ 'books' | translate }}
         </a>
-        <a class="item item-icon-left" href="#/media">
+        <a ng-click="goToPage('media')" class="item item-icon-left" href="">
             <i class="icon ion-images"></i>
             {{ 'media' | translate }}
         </a>
-        <a class="item item-icon-left" href="#/places">
+        <a ng-click="goToPage('places')" class="item item-icon-left" href="">
             <i class="icon ion-map"></i>
             {{ 'places' | translate }}
         </a>
-        <a class="item item-icon-left" href="#/info">
+        <a ng-click="goToPage('options')" class="item item-icon-left" href="">
             <i class="icon ion-gear-a"></i>
             {{ 'options' | translate }}
         </a>
     </ion-list>
+    <p>version {{appversion}}</p>
 </ion-content>

@@ -2,13 +2,13 @@
     <ion-header-bar
             ng-controller="AppController"
             type="bar-dark"
-            title="'Options'"
+            title="'options' | translate"
             left-buttons="menuButtons"
             ></ion-header-bar>
 
     <ion-content has-header="true" padding="true">
 
-        <h1>{{ 'about' | translate }} Silo</h1>
+        <h3>{{ 'about' | translate }} Silo</h3>
 
 
         <div class="row">
@@ -25,15 +25,12 @@
             </div>
         </div>
 
-        <h1>{{ 'language' | translate}}:</h1>
+        <h3>{{ 'language' | translate}}:</h3>
 
-        cur lang: {{ curlang }}
-        <div ng-controller="LangController">
-            <div class="button-bar">
-                <button ng-click="changeLanguage('en')" class="button">{{ 'lang_en' | translate }}</button>
-                <button ng-click="changeLanguage('es')" class="button">{{ 'lang_es' | translate }}</button>
-                <button ng-click="changeLanguage('it')" class="button">{{ 'lang_it' | translate }}</button>
-            </div>
+        <div class="button-bar">
+            <button ng-click="changeLanguage('en')" ng-class="curlang=='en' ? 'button button-dark' : 'button'">{{ 'lang_en' | translate }}</button>
+            <button ng-click="changeLanguage('es')" ng-class="curlang=='es' ? 'button button-dark' : 'button'">{{ 'lang_es' | translate }}</button>
+            <button ng-click="changeLanguage('it')" ng-class="curlang=='it' ? 'button button-dark' : 'button'">{{ 'lang_it' | translate }}</button>
         </div>
 
     </ion-content>

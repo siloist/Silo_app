@@ -80,10 +80,10 @@ angular.module('siloApp', ['ionic', 'ngTouch', 'pascalprecht.translate', 'fsCord
                 controller: 'PlaceDetailController'
             })
 
-            .state('info', {
-                url: '/info',
-                templateUrl: 'views/info.html',
-                controller: 'InfoController'
+            .state('options', {
+                url: '/options',
+                templateUrl: 'views/options.html',
+                controller: 'OptionsController'
             });
 
 

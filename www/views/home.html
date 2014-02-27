@@ -7,14 +7,13 @@
             ></ion-header-bar>
 
     <ion-content has-header="true" has-tabs="false" padding="true">
-        <a ng-click="newQuote()"><img src="assets/img/logo_silo.png" class="ionic-logo"/></a>
-
-        <p>
-            {{randomQuote}}
-        </p>
-
-        <div ng-controller="AppController">
-            <p>version {{appversion}}</p>
+        <div class="text-center">
+            <a ng-click="newQuote()"><img src="assets/img/logo_silo.png"/></a>
+        </div>
+        <div class="card">
+            <div class="item item-text-wrap">
+                {{randomQuote}}
+            </div>
         </div>
 
     </ion-content>
