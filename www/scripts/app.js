@@ -38,7 +38,7 @@ angular.module('siloApp', ['ionic', 'ngTouch', 'pascalprecht.translate', 'fsCord
             .state('book-index', {
                 url: '/books',
                 templateUrl: 'views/books.html',
-                controller: 'BookIndexController'
+                controller: 'BooksController'
             })
 
             .state('book-detail', {
@@ -71,7 +71,7 @@ angular.module('siloApp', ['ionic', 'ngTouch', 'pascalprecht.translate', 'fsCord
             .state('places', {
                 url: '/places',
                 templateUrl: 'views/places.html',
-                controller: 'PlaceIndexController'
+                controller: 'PlacesController'
 
             })
             .state('place-detail', {

@@ -53,13 +53,13 @@ angular.module('silo.controllers', [])
         };
     })
 
-    .controller('PlaceIndexController', function($scope, PlaceService) {
+    .controller('PlacesController', function($scope, PlaceService) {
         PlaceService.getAllPlaces(function(data) {
             $scope.places = data;
         });
 
         $scope.clearFilter = function() {
-            $scope.query = '';
+            $scope.searchString = '';
         };
     })
 
@@ -100,14 +100,14 @@ angular.module('silo.controllers', [])
 
     })
 
-    .controller('BookIndexController', function($scope, BookService) {
+    .controller('BooksController', function($scope, BookService) {
         BookService.all(function(books) {
             $scope.books = books;
             $scope.$apply();
         });
 
         $scope.clearFilter = function() {
-            $scope.query = '';
+            $scope.searchString = '';
         };
     })
 
