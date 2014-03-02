@@ -1,7 +1,7 @@
 <ion-view>
     <ion-header-bar
             ng-controller="AppController"
-            type="bar-dark"
+            type="bar-assertive"
             title="'places' | translate"
             left-buttons="menuButtons"
             ></ion-header-bar>
@@ -22,7 +22,7 @@
                 <input type="search" ng-model="searchString" placeholder="{{ 'search' | translate }}">
             </label>
             <button class="button button-clear" ng-if="searchString" ng-click="clearFilter()">
-                <i class="icon ion-close-circled" ></i>
+                <i class="icon ion-ios7-close " ></i>
             </button>
         </div>
 

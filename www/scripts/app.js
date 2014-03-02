@@ -34,40 +34,38 @@ angular.module('siloApp', ['ionic', 'ngTouch', 'pascalprecht.translate', 'fsCord
                 templateUrl: 'views/home.html',
                 controller: 'HomeController'
             })
-
+            .state('about', {
+                url: '/about',
+                templateUrl: 'views/about.html'
+            })
             .state('book-index', {
                 url: '/books',
                 templateUrl: 'views/books.html',
                 controller: 'BooksController'
             })
-
             .state('book-detail', {
                 url: '/book/:bookId',
                 templateUrl: 'views/book-detail.html',
                 controller: 'BookDetailController'
 
             })
-
             .state('book-read', {
                 url: '/read/:bookId',
                 templateUrl: 'views/book-read.html',
                 controller: 'BookReadController'
 
             })
-
             .state('media-index', {
                 url: '/media',
                 templateUrl: 'views/medias.html',
                 controller: 'MediaIndexController'
             })
-
             .state('media-detail', {
                 url: '/media-show/:mediaId',
                 templateUrl: 'views/media-detail.html',
                 controller: 'MediaDetailController'
 
             })
-
             .state('places', {
                 url: '/places',
                 templateUrl: 'views/places.html',
@@ -79,13 +77,15 @@ angular.module('siloApp', ['ionic', 'ngTouch', 'pascalprecht.translate', 'fsCord
                 templateUrl: 'views/place-detail.html',
                 controller: 'PlaceDetailController'
             })
-
             .state('options', {
                 url: '/options',
                 templateUrl: 'views/options.html',
                 controller: 'OptionsController'
+            })
+            .state('credits', {
+                url: '/credits',
+                templateUrl: 'views/credits.html'
             });
-
 
         // if none of the above states are matched, use this as the fallback
         $urlRouterProvider.otherwise('/home');

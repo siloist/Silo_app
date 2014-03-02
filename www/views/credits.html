@@ -1,0 +1,33 @@
+<ion-view>
+    <ion-header-bar
+            ng-controller="AppController"
+            type="bar-assertive"
+            title="'credits' | translate"
+            left-buttons="menuButtons"
+            ></ion-header-bar>
+
+    <ion-content has-header="true" padding="true">
+
+        <div class="card">
+            <div class="item item-text-wrap">
+                <p> This is app is developed by Stefano Cecere @KRUR studio</p>
+
+                <h3>Version</h3>
+                <p>{{appversion}}</p>
+
+                <h3>Source code</h3>
+                <p><a href="https://github.com/krur/Silo_app">GitHub</a></p>
+
+                <h3>Technologies</h3>
+                <ul>
+                    <li><a href="http://ionicframework.com">Ionic Framework</a></li>
+                    <li><a href="http://angularjs.org">AngularJS</a></li>
+                    <li><a href="http://cordova.apache.org">Apache Cordova</a></li>
+                </ul>
+
+            </div>
+        </div>
+
+
+    </ion-content>
+</ion-view>

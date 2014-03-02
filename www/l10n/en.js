@@ -7,6 +7,7 @@ var translations_en = {
     media: 'Media',
     places: 'Places',
     options: 'Options',
+    credits: 'Credits',
     language: 'Language',
     lang_en: 'english',
     lang_es: 'spanish',

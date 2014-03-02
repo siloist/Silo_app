@@ -35,17 +35,18 @@
 
 <ion-side-menus>
     <!-- Center content -->
-    <ion-pane ion-side-menu-content ion-nav-router>
-
-        <ion-nav-view></ion-nav-view>
-
+    <ion-pane ion-side-menu-content ion-nav-router drag-content="false">
+        <ion-nav-view animation="slide-left-right"></ion-nav-view>
     </ion-pane>
 
     <!-- Left menu -->
     <ion-side-menu side="left">
-        <ng-include src="'views/sidemenu.html'" ></ng-include>
+        <ng-include src="'views/sidemenu.html'"></ng-include>
     </ion-side-menu>
 
+    <!-- Right menu -->
+    <ion-side-menu side="right" is-enabled="false">
+    </ion-side-menu>
 </ion-side-menus>
 
 </body>

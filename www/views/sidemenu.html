@@ -1,10 +1,12 @@
-<ion-header-bar type="bar-dark" title="'Silo App'">
-</ion-header-bar>
-<ion-content has-header="true" ng-controller="AppController">
+<ion-content  has-header="false" ng-controller="AppController">
     <ion-list>
         <a ng-click="goToPage('home')" class="item item-icon-left" href="">
             <i class="icon ion-home"></i>
             {{ 'home' | translate }}
+        </a>
+        <a ng-click="goToPage('about')" class="item item-icon-left" href="">
+            <i class="icon ion-ios7-information"></i>
+            {{ 'about' | translate }} Silo
         </a>
         <a ng-click="goToPage('books')" class="item item-icon-left" href="">
             <i class="icon ion-folder"></i>
@@ -18,10 +20,16 @@
             <i class="icon ion-map"></i>
             {{ 'places' | translate }}
         </a>
+        <div class="item-divider">
+           &nbsp;
+        </div>
         <a ng-click="goToPage('options')" class="item item-icon-left" href="">
             <i class="icon ion-gear-a"></i>
             {{ 'options' | translate }}
         </a>
+        <a ng-click="goToPage('credits')" class="item item-icon-left" href="">
+            <i class="icon ion-ios7-help-outline"></i>
+            {{ 'credits' | translate }}
+        </a>
     </ion-list>
-    <p>version {{appversion}}</p>
 </ion-content>
