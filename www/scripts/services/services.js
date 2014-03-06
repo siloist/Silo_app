@@ -79,7 +79,7 @@ var WebSqlAdapter = new function() {
     }
 }
 
-angular.module('silo.services', [])
+angular.module('myApp.services', [])
 
     .factory('BookService', function() {
         var books = [];

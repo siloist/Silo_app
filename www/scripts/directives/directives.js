@@ -3,7 +3,7 @@
  *  Documentation: https://developers.google.com/maps/documentation/
  */
 
-angular.module('silo.directives', [])
+angular.module('myApp.directives', [])
 
     .directive("appMap", function($window) {
         return {

@@ -1,7 +1,13 @@
-angular.module('siloApp', ['ionic', 'ngTouch', 'pascalprecht.translate', 'fsCordova', 'silo.services', 'silo.controllers', 'silo.directives'])
+angular.module('myApp.controllers', []);
+angular.module('myApp.services', []);
+angular.module('myApp.directives', []);
+angular.module('myApp', ['ionic', 'ngTouch', 'pascalprecht.translate', 'fsCordova', 'myApp.services', 'myApp.controllers', 'myApp.directives'])
 
     .run(function($rootScope, $window) {
+        console.log("********************** app.run");
         $rootScope.windowWidth = $window.outerWidth;
+        $rootScope.appVersion = appConfig.version;
+
         if ($rootScope.windowWidth < 768) {
             $rootScope.isTablet = false;
         } else {
