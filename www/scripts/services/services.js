@@ -107,7 +107,10 @@ angular.module('myApp.services', [])
                 return '0.0.1' + $translate.use();
             },
             randomQuote: function() {
-                return quotes_it[Math.round(Math.random() * (quotes_it.length - 1))];
+                var curlang = $translate.use();
+                var whichone = Math.round(Math.random() * (quotes[curlang].length - 1));
+                // console.log('kingua ' + curlang + " ewhich= " + whichone);
+                return quotes[curlang][whichone];
             }
         }
     })
