@@ -1,4 +1,5 @@
 angular.module('upe.services', ['ngResource'])
+
     .factory('Profileslst', function($resource) {
         return $resource('services/profiles/:profileid.json', {}, {
             query: {
@@ -8,7 +9,7 @@ angular.module('upe.services', ['ngResource'])
         });
     });
 
-var WebSqlAdapter = new function() {
+    var WebSqlAdapter = new function() {
 
     this.getAllBooks = function(callback) {
         var books = [];

@@ -22,9 +22,7 @@
 
             <ion-item ng-repeat="book in books | filter:searchString" type="item-text-wrap" href="#/book/{{book.id}}">
                 <h3>{{book.title}}</h3>
-
                 <p>{{book.description}}</p>
-
             </ion-item>
 
         </ion-list>

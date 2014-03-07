@@ -22,6 +22,13 @@
     background: #222;
 }
 
+.dark-content h1,
+.dark-content h2,
+.dark-content h3,
+.dark-content {
+    background-color: #333;
+    color: #eee;
+}
 
 .book-text.xsmall {
     font-size: 0.6em;

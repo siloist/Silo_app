@@ -4,10 +4,11 @@ angular.module('myApp.directives', []);
 angular.module('myApp', ['ionic', 'ngTouch', 'pascalprecht.translate', 'fsCordova', 'myApp.services', 'myApp.controllers', 'myApp.directives'])
 
     .run(function($rootScope, $window) {
-        console.log("********************** app.run");
+        console.log("**** app.run");
         $rootScope.windowWidth = $window.outerWidth;
         $rootScope.appVersion = appConfig.version;
         $rootScope.bookZoom = 3; // 3 is normal, 0 is smallest, 5 is biggest
+        $rootScope.bookDarkMode = false;
 
         if ($rootScope.windowWidth < 768) {
             $rootScope.isTablet = false;
