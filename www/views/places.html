@@ -14,15 +14,14 @@
         </div>
     </div>
 
-    <ion-content ng-controller="PlacesController" has-header="true" has-subheader="true" has-footer=false">
-
+    <ion-content start-y="55" ng-controller="PlacesController" has-header="true" has-subheader="true" has-footer=false">
         <div class="bar bar-header item-input-inset">
             <label class="item-input-wrapper">
                 <i class="icon ion-ios7-search placeholder-icon"></i>
                 <input type="search" ng-model="searchString" placeholder="{{ 'search' | translate }}">
             </label>
             <button class="button button-clear" ng-if="searchString" ng-click="clearFilter()">
-                <i class="icon ion-ios7-close " ></i>
+                <i class="icon ion-ios7-close" ></i>
             </button>
         </div>
 
@@ -30,9 +29,7 @@
 
             <ion-item ng-repeat="place in places | filter:searchString" type="item-text-wrap" href="#/place/{{place.uid}}">
                 <h3>{{place.title}}</h3>
-
                 <p>{{place.loc}} {{place.country}}</p>
-
             </ion-item>
 
         </ion-list>

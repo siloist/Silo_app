@@ -1,4 +1,4 @@
-angular.module('myApp.controllers', [])
+angular.module('myApp.controllers')
 
     .controller('AppController', function($scope, $rootScope, $window, $location, AppService) {
         $scope.appversion = AppService.appversion();

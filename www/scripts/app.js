@@ -7,6 +7,7 @@ angular.module('myApp', ['ionic', 'ngTouch', 'pascalprecht.translate', 'fsCordov
         console.log("********************** app.run");
         $rootScope.windowWidth = $window.outerWidth;
         $rootScope.appVersion = appConfig.version;
+        $rootScope.bookZoom = 3; // 3 is normal, 0 is smallest, 5 is biggest
 
         if ($rootScope.windowWidth < 768) {
             $rootScope.isTablet = false;

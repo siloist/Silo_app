@@ -1,7 +1,7 @@
 .book-text p {
     font-size: 150%;
-    line-height:130%;
-    text-align:justify;
+    line-height: 130%;
+    text-align: justify;
 }
 
 .menu.menu-left {
@@ -11,6 +11,7 @@
 .menu .scroll-content {
     background: #444;
 }
+
 .menu .item {
     background: #444;
     color: #fff;
@@ -19,4 +20,25 @@
 
 .menu .item.active {
     background: #222;
+}
+
+
+.book-text.xsmall {
+    font-size: 0.6em;
+}
+
+.book-text.small {
+    font-size: 0.8em;
+}
+
+.book-text.normal {
+    font-size: 1em;
+}
+
+.book-text.large {
+    font-size: 1.2em;
+}
+
+.book-text.xlarge {
+    font-size: 1.4em;
 }

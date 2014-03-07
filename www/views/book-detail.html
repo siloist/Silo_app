@@ -7,12 +7,18 @@
             left-buttons="backButtons"
             ></ion-header-bar>
 
-    <ion-content has-header="true" padding="true">
-        <p>{{ book.description }}</p>
+    <div class="bar bar-subheader">
+        <div class="button-bar">
+            <button ng-click="zoomInText()" class="button icon ion-minus"></button>
+            <button ng-click="zoomOutText()" class="button icon ion-plus"></button>
+        </div>
+    </div>
 
+    <ion-content has-header="true" has-subheader="true" padding="true">
+        <p>{{ book.description }}</p>
         <p>{{ 'language' | translate}}: {{ 'lang_' + book.lang | translate}}</p>
 
-        <div class="book-text" contenteditable="true">
+        <div class="book-text" contenteditable="true" ng-class="appliedClass">
             <h1 id="laguarigionedellasofferenza">LA GUARIGIONE DELLA SOFFERENZA</h1>
 
             <h2 id="puntadevacasmendozaargentina">Punta de Vacas, Mendoza, Argentina</h2>
