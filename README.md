@@ -7,6 +7,12 @@ a mobile app dedicated to Mario Rodriguez Cobos "Silo", the humanist writer and 
 - multilanguage
 - side menu
 - local db (JSON)
+- read text with font zoom, dark mode and chapter menu
+- markdown rendering
+- smarphone / tablet automatic tempalte switching
+
+## Preview
+an online preview of this app is available at http://silo.app.krur.com/
 
 ## Technologies
 this app is designed for smartphones and tablets, iOS and Android, built as Cordova (PhoneGap) project with OpenSource technologies:
