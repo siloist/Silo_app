@@ -13,7 +13,9 @@ angular.module('myApp', ['ionic', 'ngTouch', 'pascalprecht.translate', 'fsCordov
         if ($rootScope.windowWidth < 768) {
             $rootScope.isTablet = false;
         } else {
-            $rootScope.isTablet = true;
+            //$rootScope.isTablet = true;
+            // TODO - now disabled because it doesn't work in big browsers window (doesn't get the iframe width)
+            $rootScope.isTablet = false;
         }
         angular.element($window).bind('resize', function() {
             $rootScope.windowWidth = $window.outerWidth;
