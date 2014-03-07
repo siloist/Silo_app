@@ -23,6 +23,18 @@
     background: #222;
 }
 
+/** CONTENT **/
+.scroll-content ul {
+}
+.scroll-content li {
+    padding: 6px 0px 6px 20px;
+    background-image:url(../assets/img/btn_arrow_dark.png);
+    background-repeat: no-repeat;
+    background-position: 0;
+}
+
+/** BOOK STYLES **/
+
 .dark-content h1,
 .dark-content h2,
 .dark-content h3,
