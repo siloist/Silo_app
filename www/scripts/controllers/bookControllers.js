@@ -12,18 +12,21 @@ angular.module('myApp.controllers')
     })
 
     .controller('BookDetailController', function($scope, $rootScope, $stateParams, BookService) {
-        var fontClasses = {1: 'xsmall', 2: 'small', 3: 'normal', 4: 'large', 5: 'xlarge'};
-
-        $scope.textsizeClass = fontClasses[$rootScope.bookZoom];
-        if ($rootScope.bookDarkMode) {
-            $scope.stylemodeClass = 'dark-content';
-        }
+        $rootScope.allowRightMenu = true;
 
         BookService.get($stateParams.bookId, function(book) {
             $scope.book = book;
             $scope.$apply();
         });
         //$scope.book = BookService.get($stateParams.bookId);
+
+
+        var fontClasses = {1: 'xsmall', 2: 'small', 3: 'normal', 4: 'large', 5: 'xlarge'};
+
+        $scope.textsizeClass = fontClasses[$rootScope.bookZoom];
+        if ($rootScope.bookDarkMode) {
+            $scope.stylemodeClass = 'dark-content';
+        }
 
         $scope.changeStyle = function() {
             $rootScope.bookDarkMode = !$rootScope.bookDarkMode;
@@ -57,7 +60,7 @@ angular.module('myApp.controllers')
         };
 
         $scope.chapters = function() {
-            alert('not yet ;)');
+            $scope.sideMenuController.toggleRight();
         };
     })
 

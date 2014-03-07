@@ -10,6 +10,8 @@ angular.module('myApp', ['ionic', 'ngTouch', 'pascalprecht.translate', 'fsCordov
         $rootScope.bookZoom = 3; // 3 is normal, 0 is smallest, 5 is biggest
         $rootScope.bookDarkMode = false;
 
+        $rootScope.allowRightMenu = false;
+
         if ($rootScope.windowWidth < 768) {
             $rootScope.isTablet = false;
         } else {

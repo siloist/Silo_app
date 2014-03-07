@@ -4,7 +4,8 @@
     text-align: justify;
 }
 
-.menu.menu-left {
+.menu.menu-left,
+.menu.menu-right {
     background: #444;
 }
 
