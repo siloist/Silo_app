@@ -9,7 +9,7 @@ angular.module('upe.services', ['ngResource'])
         });
     });
 
-    var WebSqlAdapter = new function() {
+var WebSqlAdapter = new function() {
 
     this.getAllBooks = function(callback) {
         var books = [];
@@ -82,7 +82,26 @@ angular.module('upe.services', ['ngResource'])
 
 angular.module('myApp.services', [])
 
-    .factory('BookService', function() {
+    .factory('BookService', function($http) {
+        var books = [];
+
+        return {
+            all: function(callback) {
+                $http.get('assets/data/books.json').success(
+                    function(data) {
+                        books = data;
+                        callback(data);
+                    }
+                );
+            },
+            get: function(bookId) {
+                console.log('BookService get ' + bookId);
+                return books[bookId - 1];
+            }
+        }
+    })
+
+    .factory('BookServiceSQL', function() {
         var books = [];
 
         return {
@@ -136,7 +155,7 @@ angular.module('myApp.services', [])
 
     .factory('PlaceService', function($http) {
         var places = [];
-        console.log("PlaceService call");
+        // console.log("PlaceService call");
         return {
             getAllPlaces: function(callback) {
                 $http.get('assets/data/places.json').success(

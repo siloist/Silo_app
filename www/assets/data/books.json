@@ -1,0 +1,74 @@
+[
+    {
+        "id": "1",
+        "type": "1",
+        "lang": "en",
+        "title": "The healing of suffering",
+        "description": "",
+        "img": "",
+        "file": "1969_en"
+    },
+    {
+        "id": "2",
+        "type": "1",
+        "lang": "es",
+        "title": "LA CURACIÓN DEL SUFRIMIENTO",
+        "description": "",
+        "img": "",
+        "file": "1969_es"
+    },
+    {
+        "id": "3",
+        "type": "1",
+        "lang": "fr",
+        "title": "LA GUERISON DE LA SOUFFRANCE",
+        "description": "",
+        "img": "",
+        "file": "1969_fr"
+    },
+    {
+        "id": "4",
+        "type": "1",
+        "lang": "it",
+        "title": "La guarigione della sofferenza",
+        "description": "",
+        "img": "",
+        "file": "1969_it"
+    },
+    {
+        "id": "5",
+        "type": "1",
+        "lang": "en",
+        "title": "Silo’s Message",
+        "description": "",
+        "img": "",
+        "file": "message_en"
+    },
+    {
+        "id": "6",
+        "type": "1",
+        "lang": "es",
+        "title": "El Mensaje de Silo",
+        "description": "",
+        "img": "",
+        "file": "message_es"
+    },
+    {
+        "id": "7",
+        "type": "1",
+        "lang": "fr",
+        "title": "Le Message de Silo",
+        "description": "",
+        "img": "",
+        "file": "message_fr"
+    },
+    {
+        "id": "8",
+        "type": "1",
+        "lang": "it",
+        "title": "Il Messaggio di Silo",
+        "description": "",
+        "img": "",
+        "file": "message_it"
+    }
+]

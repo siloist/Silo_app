@@ -8,10 +8,10 @@
             ></ion-header-bar>
 
     <ion-content has-header="true" has-subheader="false" padding="true" ng-class="stylemodeClass">
-        <p>{{ book.description }}</p>
-        <p>{{ 'language' | translate}}: {{ 'lang_' + book.lang | translate}}</p>
+        <!--<p>{{ book.description }}</p>-->
+        <!--<p>{{ 'language' | translate}}: {{ 'lang_' + book.lang | translate}}</p>-->
 
-        <div class="book-text" contenteditable="true" ng-class="[textsizeClass]" ng-include="'assets/books/1969_en.html'"></div>
+        <div class="book-text" contenteditable="true" ng-class="[textsizeClass]" ng-include="'assets/books/' + book.file +'.html'"></div>
 
     </ion-content>
 

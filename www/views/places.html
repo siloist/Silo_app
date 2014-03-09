@@ -21,14 +21,15 @@
                 <input type="search" ng-model="searchString" placeholder="{{ 'search' | translate }}">
             </label>
             <button class="button button-clear" ng-if="searchString" ng-click="clearFilter()">
-                <i class="icon ion-ios7-close" ></i>
+                <i class="icon ion-ios7-close"></i>
             </button>
         </div>
 
         <ion-list>
 
-            <ion-item ng-repeat="place in places | filter:searchString" type="item-text-wrap" href="#/place/{{place.uid}}">
+            <ion-item ng-repeat="place in places | filter:searchString" type="item-text-wrap" href="#/place/{{place.id}}">
                 <h3>{{place.title}}</h3>
+
                 <p>{{place.loc}} {{place.country}}</p>
             </ion-item>
 

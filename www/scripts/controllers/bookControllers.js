@@ -3,7 +3,7 @@ angular.module('myApp.controllers')
     .controller('BooksController', function($scope, BookService) {
         BookService.all(function(books) {
             $scope.books = books;
-            $scope.$apply();
+            //$scope.$apply();
         });
 
         $scope.clearFilter = function() {
@@ -14,12 +14,12 @@ angular.module('myApp.controllers')
     .controller('BookDetailController', function($scope, $rootScope, $stateParams, BookService) {
         $rootScope.allowRightMenu = true;
 
-        BookService.get($stateParams.bookId, function(book) {
-            $scope.book = book;
-            $scope.$apply();
-        });
-        //$scope.book = BookService.get($stateParams.bookId);
+        $scope.book = BookService.get($stateParams.bookId);
 
+//        BookService.get($stateParams.bookId, function(book) {
+//            $scope.book = book;
+//            $scope.$apply();
+//        });
 
         var fontClasses = {1: 'xsmall', 2: 'small', 3: 'normal', 4: 'large', 5: 'xlarge'};
 
@@ -62,13 +62,5 @@ angular.module('myApp.controllers')
         $scope.chapters = function() {
             $scope.sideMenuController.toggleRight();
         };
-    })
-
-    .controller('BookReadController', function($scope, $stateParams, BookService) {
-        BookService.get($stateParams.bookId, function(book) {
-            $scope.book = book;
-            $scope.$apply();
-        });
-
     })
 ;

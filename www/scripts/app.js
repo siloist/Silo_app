@@ -50,7 +50,7 @@ angular.module('myApp', ['ionic', 'ngTouch', 'pascalprecht.translate', 'fsCordov
                 url: '/about',
                 templateUrl: 'views/about.html'
             })
-            .state('book-index', {
+            .state('books', {
                 url: '/books',
                 templateUrl: 'views/books.html',
                 controller: 'BooksController'
@@ -59,12 +59,6 @@ angular.module('myApp', ['ionic', 'ngTouch', 'pascalprecht.translate', 'fsCordov
                 url: '/book/:bookId',
                 templateUrl: 'views/book-detail.html',
                 controller: 'BookDetailController'
-
-            })
-            .state('book-read', {
-                url: '/read/:bookId',
-                templateUrl: 'views/book-read.html',
-                controller: 'BookReadController'
 
             })
             .state('media-index', {
