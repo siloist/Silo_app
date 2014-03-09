@@ -1,3 +1,8 @@
+"use strict";
+ionic.Platform.ready(function(){
+    console.log("Platform is ready!");
+});
+
 angular.module('myApp.controllers', []);
 angular.module('myApp.services', []);
 angular.module('myApp.directives', []);
