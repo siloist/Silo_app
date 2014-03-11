@@ -11,6 +11,7 @@ var translations_en = {
     language: 'Language',
     lang_en: 'english',
     lang_es: 'spanish',
+    lang_fr: 'french',
     lang_it: 'italian'
 };
 
@@ -40,6 +41,19 @@ var quotes = {
         "Cuando tratas a los demás como quieres que te traten te liberas.",
         "No importa en qué bando te hayan puesto los acontecimientos, lo que importa es que comprendas que tú no has elegido ningún bando.",
         "Los actos contradictorios o unitivos se acumulan en ti. Si repites tus actos de unidad interna ya nada podrá detenerte."
+    ],
+    fr: ["Andare contro l'evoluzione delle cose è andare contro se stessi.",
+        "Quando forzi qualcosa per raggiungere un fine, produci il contrario.",
+        "Non opporti ad una grande forza. Retrocedi finché non si indebolisca; allora, avanza con risolutezza.",
+        "Le cose stanno bene quando vanno insieme, non quando vanno separate.",
+        "Se per te stanno bene il giorno e la notte, l'estate e l'inverno, hai superato le contraddizioni.",
+        "Se persegui il piacere, ti incateni alla sofferenza. Ma se non danneggi la tua salute, godi senza inibizioni quando si presenta l'opportunità.",
+        "Se persegui un fine, ti incateni. Se tutto ciò che fai, lo fai come un fine in se stesso, ti liberi.",
+        "Farai sparire i tuoi conflitti quando li avrai compresi nella loro radice ultima, non quando li vorrai risolvere.",
+        "Quando danneggi gli altri, ti incateni. Ma se non danneggi nessuno puoi fare quello che vuoi con libertà.",
+        "Quando tratti gli altri come vuoi essere trattato, ti liberi.",
+        "Non importa da che parte ti abbiano messo gli eventi, ciò che importa è che tu comprenda di non aver scelto nessuna parte.",
+        "Gli atti contraddittori e quelli unitivi si accumulano in te. Se ripeti i tuoi atti di unità interna, niente ti potrà fermare."
     ],
     it: ["Andare contro l'evoluzione delle cose è andare contro se stessi.",
         "Quando forzi qualcosa per raggiungere un fine, produci il contrario.",

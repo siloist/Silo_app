@@ -11,5 +11,6 @@ var translations_it = {
     language: 'Lingua',
     lang_en: 'inglese',
     lang_es: 'spagnolo',
-    lang_it: 'italiano',
+    lang_fr: 'francese',
+    lang_it: 'italiano'
 };
