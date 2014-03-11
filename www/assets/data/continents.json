@@ -1,0 +1,51 @@
+{
+{
+"code":"AF",
+"title_en":"Africa",
+"title_es":"Africa",
+"title_fr":"Africa",
+"title_it":"Africa"
+},
+{
+"code":"AS",
+"title_en":"Asia",
+"title_es":"Asia",
+"title_fr":"Asia",
+"title_it":"Asia"
+},
+{
+"code":"EU",
+"title_en":"Europe",
+"title_es":"Europa",
+"title_fr":"Europe",
+"title_it":"Europa"
+},
+{
+"code":"NA",
+"title_en":"North America",
+"title_es":"America Norte",
+"title_fr":"America Nord",
+"title_it":"America del Nord"
+},
+{
+"code":"SA",
+"title_en":"South America",
+"title_es":"America Sur",
+"title_fr":"America Sud",
+"title_it":"America del Sud"
+},
+{
+"code":"OC",
+"title_en":"Oceania",
+"title_es":"Oceania",
+"title_fr":"Oceania",
+"title_it":"Oceania"
+},
+{
+"code":"AN",
+"title_en":"Antarctica",
+"title_es":"Anartica",
+"title_fr":"Antartica",
+"title_it":"Antartica"
+}
+}
