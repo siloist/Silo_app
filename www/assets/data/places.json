@@ -1,6 +1,6 @@
+[
 {
-{
-"uid":"1",
+"id":"1",
 "type":"park",
 "status":"1",
 "title":"Parque Punta de Vacas",
@@ -15,7 +15,7 @@
 "year":"1999"
 },
 {
-"uid":"2",
+"id":"2",
 "type":"park",
 "status":"1",
 "title":"Parque la Reja",
@@ -30,7 +30,7 @@
 "year":"2005"
 },
 {
-"uid":"3",
+"id":"3",
 "type":"park",
 "status":"1",
 "title":"Parque Manantiales",
@@ -41,13 +41,13 @@
 "email":"",
 "contact":"",
 "coord":"-70.814827,-32.900620",
-"img":"",
+"img":"manantiales.jpg",
 "year":""
 },
 {
-"uid":"4",
+"id":"4",
 "type":"park",
-"status":"1",
+"status":"0",
 "title":"Banahaw Park",
 "country":"PH",
 "loc":"Asia",
@@ -60,7 +60,7 @@
 "year":""
 },
 {
-"uid":"5",
+"id":"5",
 "type":"park",
 "status":"1",
 "title":"Parque Carcarañá",
@@ -71,11 +71,11 @@
 "email":"",
 "contact":"",
 "coord":"-61.012100,-32.717167",
-"img":"",
+"img":"carcarana.jpg",
 "year":""
 },
 {
-"uid":"6",
+"id":"6",
 "type":"park",
 "status":"1",
 "title":"Parco Casa Giorgi",
@@ -86,11 +86,11 @@
 "email":"",
 "contact":"",
 "coord":"9.265594,44.877281",
-"img":"",
+"img":"casagiorgi.jpg",
 "year":""
 },
 {
-"uid":"7",
+"id":"7",
 "type":"park",
 "status":"1",
 "title":"Parque Caucaia",
@@ -101,11 +101,11 @@
 "email":"",
 "contact":"",
 "coord":"-47.019123,-23.673731",
-"img":"",
+"img":"caucaia.jpg",
 "year":""
 },
 {
-"uid":"8",
+"id":"8",
 "type":"park",
 "status":"1",
 "title":"Parque Chaco",
@@ -116,11 +116,11 @@
 "email":"",
 "contact":"",
 "coord":"-58.939369,-27.452608",
-"img":"",
+"img":"chaco.jpg",
 "year":""
 },
 {
-"uid":"9",
+"id":"9",
 "type":"park",
 "status":"1",
 "title":"Mikebuda Park",
@@ -131,11 +131,11 @@
 "email":"",
 "contact":"",
 "coord":"19.612635,47.156937",
-"img":"",
+"img":"mikebuda.jpg",
 "year":""
 },
 {
-"uid":"10",
+"id":"10",
 "type":"park",
 "status":"1",
 "title":"Parc La Belle Ideé",
@@ -146,11 +146,11 @@
 "email":"",
 "contact":"",
 "coord":"3.266029,48.919567",
-"img":"",
+"img":"belleidee.jpg",
 "year":""
 },
 {
-"uid":"11",
+"id":"11",
 "type":"park",
 "status":"1",
 "title":"Asian Ashram",
@@ -161,11 +161,11 @@
 "email":"",
 "contact":"",
 "coord":"73.308914,18.833778",
-"img":"",
+"img":"asian.jpg",
 "year":""
 },
 {
-"uid":"12",
+"id":"12",
 "type":"park",
 "status":"1",
 "title":"Parque La Unión",
@@ -176,11 +176,11 @@
 "email":"",
 "contact":"",
 "coord":"-73.892326,4.490178",
-"img":"",
+"img":"launion.jpg",
 "year":""
 },
 {
-"uid":"13",
+"id":"13",
 "type":"park",
 "status":"1",
 "title":"Parco Attigliano",
@@ -191,11 +191,11 @@
 "email":"",
 "contact":"",
 "coord":"12.296491,42.517368",
-"img":"",
+"img":"attigliano.jpg",
 "year":""
 },
 {
-"uid":"14",
+"id":"14",
 "type":"park",
 "status":"1",
 "title":"Parque Montecillo",
@@ -206,11 +206,11 @@
 "email":"",
 "contact":"",
 "coord":"-66.218246,-17.335196",
-"img":"",
+"img":"montecillo.jpg",
 "year":""
 },
 {
-"uid":"15",
+"id":"15",
 "type":"park",
 "status":"1",
 "title":"Parque Patagonia Norte",
@@ -221,11 +221,11 @@
 "email":"",
 "contact":"",
 "coord":"-68.098862,-38.873093",
-"img":"",
+"img":"patagonia.jpg",
 "year":""
 },
 {
-"uid":"16",
+"id":"16",
 "type":"park",
 "status":"1",
 "title":"Parque Piribebuy",
@@ -236,11 +236,11 @@
 "email":"",
 "contact":"",
 "coord":"-57.041187,-25.466660",
-"img":"",
+"img":"piribebuy.jpg",
 "year":""
 },
 {
-"uid":"17",
+"id":"17",
 "type":"park",
 "status":"1",
 "title":"Red Bluff Park",
@@ -255,7 +255,7 @@
 "year":""
 },
 {
-"uid":"18",
+"id":"18",
 "type":"park",
 "status":"1",
 "title":"Parque Toledo",
@@ -266,11 +266,11 @@
 "email":"",
 "contact":"",
 "coord":"-3.576812,39.969349",
-"img":"",
+"img":"toledo.jpg",
 "year":""
 },
 {
-"uid":"19",
+"id":"19",
 "type":"park",
 "status":"1",
 "title":"Hudson Valley Park",
@@ -281,26 +281,26 @@
 "email":"",
 "contact":"",
 "coord":"-74.014122,41.887966",
-"img":"",
+"img":"hudson.jpg",
 "year":""
 },
 {
-"uid":"20",
+"id":"20",
 "type":"park",
 "status":"1",
 "title":"Park Schlamau",
 "country":"DE",
-"loc":"",
-"description":"Schlamau, Wiesenburg, Berlín. Europa.",
+"loc":"Schlamau, Wiesenburg, Berlín",
+"description":"",
 "url":"www.parkschlamau.org",
-"email":"",
+"email":"post@parkschlamau.org",
 "contact":"",
 "coord":"12.458496,52.106506",
-"img":"",
+"img":"schlamau.jpg",
 "year":""
 },
 {
-"uid":"21",
+"id":"21",
 "type":"park",
 "status":"1",
 "title":"Parque Minho",
@@ -315,7 +315,7 @@
 "year":"2012"
 },
 {
-"uid":"22",
+"id":"22",
 "type":"park",
 "status":"0",
 "title":"Holit Park",
@@ -330,7 +330,7 @@
 "year":""
 },
 {
-"uid":"23",
+"id":"23",
 "type":"park",
 "status":"1",
 "title":"Parque Aloasí",
@@ -342,25 +342,25 @@
 "contact":"",
 "coord":"-78.563232,-0.507424",
 "img":"aloasi.jpg",
-"year":""
+"year":"2012"
 },
 {
-"uid":"24",
+"id":"24",
 "type":"park",
 "status":"1",
 "title":"Marracuene Park",
 "country":"MZ",
-"loc":"Marracuene",
+"loc":"Marracuene - Maputo",
 "description":"",
 "url":"www.parquemarracuene.org",
 "email":"",
 "contact":"",
 "coord":"32.607422,-25.759546",
-"img":"",
+"img":"marracuene.jpg",
 "year":""
 },
 {
-"uid":"25",
+"id":"25",
 "type":"park",
 "status":"1",
 "title":"Parque Aldama",
@@ -375,7 +375,7 @@
 "year":""
 },
 {
-"uid":"26",
+"id":"26",
 "type":"park",
 "status":"1",
 "title":"Pravíkov Park",
@@ -390,7 +390,7 @@
 "year":"2011"
 },
 {
-"uid":"27",
+"id":"27",
 "type":"park",
 "status":"1",
 "title":"Parque Las Nubes",
@@ -405,22 +405,22 @@
 "year":""
 },
 {
-"uid":"28",
+"id":"28",
 "type":"park",
-"status":"1",
+"status":"0",
 "title":"Bitipara Park",
 "country":"BD",
-"loc":"Gazipur",
+"loc":"Bitipara, Gazipur",
 "description":"",
 "url":"www.bitiparapark.org",
-"email":"",
+"email":"info@bitiparapark.org",
 "contact":"",
 "coord":"",
 "img":"",
 "year":""
 },
 {
-"uid":"29",
+"id":"29",
 "type":"park",
 "status":"1",
 "title":"Parque Ihuanco",
@@ -435,9 +435,9 @@
 "year":""
 },
 {
-"uid":"30",
+"id":"30",
 "type":"park",
-"status":"1",
+"status":"0",
 "title":"Parque La Pampa",
 "country":"AR",
 "loc":"Anguil - La Pampa",
@@ -450,9 +450,9 @@
 "year":""
 },
 {
-"uid":"31",
+"id":"31",
 "type":"park",
-"status":"1",
+"status":"0",
 "title":"Parque Igarassu",
 "country":"BR",
 "loc":"Igarassu",
@@ -465,7 +465,7 @@
 "year":""
 },
 {
-"uid":"32",
+"id":"32",
 "type":"park",
 "status":"1",
 "title":"Parque Retiro",
@@ -480,9 +480,9 @@
 "year":""
 },
 {
-"uid":"33",
+"id":"33",
 "type":"park",
-"status":"1",
+"status":"0",
 "title":"Parque Chaka",
 "country":"CL",
 "loc":"Arica",
@@ -495,7 +495,7 @@
 "year":""
 },
 {
-"uid":"34",
+"id":"34",
 "type":"park",
 "status":"1",
 "title":"Parc Òdena",
@@ -507,10 +507,10 @@
 "contact":"",
 "coord":"",
 "img":"odena.jpg",
-"year":"2010"
+"year":"2012"
 },
 {
-"uid":"101",
+"id":"101",
 "type":"com",
 "status":"",
 "title":"Toronto West-End",
@@ -525,7 +525,7 @@
 "year":""
 },
 {
-"uid":"102",
+"id":"102",
 "type":"com",
 "status":"",
 "title":"Not Not-Zen",
@@ -540,7 +540,7 @@
 "year":""
 },
 {
-"uid":"103",
+"id":"103",
 "type":"com",
 "status":"",
 "title":"Study and Reflection",
@@ -555,7 +555,7 @@
 "year":""
 },
 {
-"uid":"104",
+"id":"104",
 "type":"com",
 "status":"",
 "title":"London Community of Silo's Message",
@@ -570,7 +570,7 @@
 "year":""
 },
 {
-"uid":"105",
+"id":"105",
 "type":"com",
 "status":"",
 "title":"DeafStory - Deaf Empowerment Programs via Silo's Message",
@@ -585,7 +585,7 @@
 "year":""
 },
 {
-"uid":"106",
+"id":"106",
 "type":"com",
 "status":"",
 "title":"Samfélagið",
@@ -600,7 +600,7 @@
 "year":""
 },
 {
-"uid":"107",
+"id":"107",
 "type":"com",
 "status":"",
 "title":"Community of Silo's Message in Jaffa, Israel",
@@ -615,7 +615,7 @@
 "year":""
 },
 {
-"uid":"108",
+"id":"108",
 "type":"com",
 "status":"",
 "title":"Open Space Community",
@@ -630,7 +630,7 @@
 "year":""
 },
 {
-"uid":"109",
+"id":"109",
 "type":"com",
 "status":"",
 "title":"Mensahe para Sa Iyo",
@@ -645,7 +645,7 @@
 "year":""
 },
 {
-"uid":"110",
+"id":"110",
 "type":"com",
 "status":"",
 "title":"Ankara Community",
@@ -660,7 +660,7 @@
 "year":""
 },
 {
-"uid":"111",
+"id":"111",
 "type":"com",
 "status":"",
 "title":"Cardiff Community of the Message",
@@ -675,7 +675,7 @@
 "year":""
 },
 {
-"uid":"112",
+"id":"112",
 "type":"com",
 "status":"",
 "title":"Community of Silo's Message Davis/Sacramento",
@@ -690,7 +690,7 @@
 "year":""
 },
 {
-"uid":"113",
+"id":"113",
 "type":"com",
 "status":"",
 "title":"Community of the Message - New York - Union Square",
@@ -705,7 +705,7 @@
 "year":""
 },
 {
-"uid":"114",
+"id":"114",
 "type":"com",
 "status":"",
 "title":"The Astoria Community of the Message",
@@ -720,7 +720,7 @@
 "year":""
 },
 {
-"uid":"115",
+"id":"115",
 "type":"com",
 "status":"",
 "title":"SW Portland Community of Silo's Message",
@@ -735,7 +735,7 @@
 "year":""
 },
 {
-"uid":"116",
+"id":"116",
 "type":"com",
 "status":"",
 "title":"Red Bluff Community of Silo's Message",
@@ -750,7 +750,7 @@
 "year":""
 },
 {
-"uid":"117",
+"id":"117",
 "type":"com",
 "status":"",
 "title":"Community of the Message - San Francisco",
@@ -765,7 +765,7 @@
 "year":""
 },
 {
-"uid":"118",
+"id":"118",
 "type":"com",
 "status":"",
 "title":"Community of the Message - San Rafael",
@@ -780,7 +780,7 @@
 "year":""
 },
 {
-"uid":"119",
+"id":"119",
 "type":"com",
 "status":"",
 "title":"Comunita Attigliano",
@@ -795,7 +795,7 @@
 "year":""
 },
 {
-"uid":"120",
+"id":"120",
 "type":"com",
 "status":"",
 "title":"Comunità de Il Messaggio di Silo Attigliano 2 – Il Segnale",
@@ -810,7 +810,7 @@
 "year":""
 },
 {
-"uid":"121",
+"id":"121",
 "type":"com",
 "status":"",
 "title":"Comunità de Il Messaggio di Silo – Firenze 2",
@@ -825,7 +825,7 @@
 "year":""
 },
 {
-"uid":"122",
+"id":"122",
 "type":"com",
 "status":"",
 "title":"Comunità del Messaggio di Silo - Firenze1",
@@ -840,7 +840,7 @@
 "year":""
 },
 {
-"uid":"123",
+"id":"123",
 "type":"com",
 "status":"",
 "title":"Comunità di Milano",
@@ -855,7 +855,7 @@
 "year":""
 },
 {
-"uid":"124",
+"id":"124",
 "type":"com",
 "status":"",
 "title":"Comunità del Messaggio Breda 2",
@@ -870,7 +870,7 @@
 "year":""
 },
 {
-"uid":"125",
+"id":"125",
 "type":"com",
 "status":"",
 "title":"Community of Praha - Nusle, Prague - Czech Republic",
@@ -885,7 +885,7 @@
 "year":""
 },
 {
-"uid":"126",
+"id":"126",
 "type":"com",
 "status":"",
 "title":"Silo's Message in South India",
@@ -900,7 +900,7 @@
 "year":""
 },
 {
-"uid":"127",
+"id":"127",
 "type":"com",
 "status":"",
 "title":"Community of Silo's message - Kilkenny",
@@ -915,7 +915,7 @@
 "year":""
 },
 {
-"uid":"128",
+"id":"128",
 "type":"com",
 "status":"",
 "title":"Community of Silo's Message in South Florida - USA",
@@ -930,7 +930,7 @@
 "year":""
 },
 {
-"uid":"129",
+"id":"129",
 "type":"com",
 "status":"",
 "title":"Comunità del Messaggio Breda 3",
@@ -945,7 +945,7 @@
 "year":""
 },
 {
-"uid":"130",
+"id":"130",
 "type":"com",
 "status":"",
 "title":"Comunità del Messaggio Breda 4",
@@ -960,7 +960,7 @@
 "year":""
 },
 {
-"uid":"131",
+"id":"131",
 "type":"com",
 "status":"",
 "title":"Comunità del Messaggio",
@@ -975,7 +975,7 @@
 "year":""
 },
 {
-"uid":"132",
+"id":"132",
 "type":"com",
 "status":"",
 "title":"Communauté belle de mai de Marseille",
@@ -990,7 +990,7 @@
 "year":""
 },
 {
-"uid":"133",
+"id":"133",
 "type":"com",
 "status":"",
 "title":"Le message à Marseille",
@@ -1005,7 +1005,7 @@
 "year":""
 },
 {
-"uid":"134",
+"id":"134",
 "type":"com",
 "status":"",
 "title":"Communauté de Meaux",
@@ -1020,7 +1020,7 @@
 "year":""
 },
 {
-"uid":"135",
+"id":"135",
 "type":"com",
 "status":"",
 "title":"Communauté Chemin faisant de Noisy-le-Sec",
@@ -1035,7 +1035,7 @@
 "year":""
 },
 {
-"uid":"136",
+"id":"136",
 "type":"com",
 "status":"",
 "title":"Salita de Olleros, Chacarita, Cap. Fed.",
@@ -1050,7 +1050,7 @@
 "year":""
 },
 {
-"uid":"137",
+"id":"137",
 "type":"com",
 "status":"",
 "title":"C. Faros de los Andes",
@@ -1065,7 +1065,7 @@
 "year":""
 },
 {
-"uid":"138",
+"id":"138",
 "type":"com",
 "status":"",
 "title":"C. Porto Alegre",
@@ -1080,7 +1080,7 @@
 "year":""
 },
 {
-"uid":"139",
+"id":"139",
 "type":"com",
 "status":"",
 "title":"C. Los Caminos abiertos de Peñalolen",
@@ -1095,7 +1095,7 @@
 "year":""
 },
 {
-"uid":"140",
+"id":"140",
 "type":"com",
 "status":"",
 "title":"C. Salita Ciudadela Colsubsidio",
@@ -1110,7 +1110,7 @@
 "year":""
 },
 {
-"uid":"35",
+"id":"35",
 "type":"park",
 "status":"1",
 "title":"Parque El Remanso",
@@ -1125,7 +1125,7 @@
 "year":""
 },
 {
-"uid":"36",
+"id":"36",
 "type":"park",
 "status":"1",
 "title":"Parque Bosques",
@@ -1140,7 +1140,7 @@
 "year":"2012"
 },
 {
-"uid":"37",
+"id":"37",
 "type":"park",
 "status":"1",
 "title":"Parque Navas del Rey",
@@ -1155,7 +1155,7 @@
 "year":""
 },
 {
-"uid":"38",
+"id":"38",
 "type":"park",
 "status":"1",
 "title":"Parque Paravachasca",
@@ -1169,4 +1169,4 @@
 "img":"paravachasca.jpg",
 "year":"2012"
 }
-}
+]
