@@ -1,12 +1,12 @@
 <ion-view>
-    <ion-header-bar
-            ng-controller="AppController"
-            type="bar-assertive"
-            title="{{place.title}}"
-            left-buttons="backButtons"
-            ></ion-header-bar>
+    <ion-header-bar class="bar-assertive" ng-controller="AppController">
+        <div class="buttons">
+            <button ng-click="goBack()" class="button button-icon icon ion-ios7-arrow-back"></button>
+        </div>
+        <h1 class="title">{{place.title}}</h1>
+    </ion-header-bar>
 
-    <ion-content has-header="true" padding="true">
+    <ion-content padding="true">
 
         <div class="card">
             <div class="item item-text-wrap">
@@ -23,7 +23,6 @@
                 <p>{{ place.url }}</p>
             </div>
         </div>
-
 
         <app-map style="height:300px;margin:12px;"
                  center="coordinates"

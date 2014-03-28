@@ -1,13 +1,15 @@
 <ion-view title="book.title">
+    <ion-header-bar class="bar-assertive" ng-controller="AppController">
+        <div class="buttons">
+            <button ng-click="goBack()" class="button button-icon icon ion-ios7-arrow-back"></button>
+        </div>
+        <h1 class="title">{{book.title}}</h1>
+        <div class="buttons">
+            <button ng-click="openRightPanel()" class="button">Chapters</button>
+        </div>
+    </ion-header-bar>
 
-    <ion-header-bar
-            ng-controller="AppController"
-            type="bar-assertive"
-            title="{{book.title}}"
-            left-buttons="backButtons"
-            ></ion-header-bar>
-
-    <ion-content has-header="true" has-subheader="false" padding="true" ng-class="stylemodeClass">
+    <ion-content padding="true" ng-class="stylemodeClass">
         <!--<p>{{ book.description }}</p>-->
         <!--<p>{{ 'language' | translate}}: {{ 'lang_' + book.lang | translate}}</p>-->
 
@@ -15,7 +17,7 @@
 
     </ion-content>
 
-    <div class="bar bar-footer ">
+    <div class="bar bar-footer">
         <div class="button-bar">
             <button ng-click="zoomInText()" class="button icon ion-minus"></button>
             <button ng-click="zoomOutText()" class="button icon ion-plus"></button>

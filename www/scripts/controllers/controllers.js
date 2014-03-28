@@ -1,38 +1,31 @@
 angular.module('myApp.controllers')
 
-    .controller('AppController', function($scope, $rootScope, $window, $location, AppService) {
+    .controller('AppController', function($scope, $rootScope, $window, $location, AppService, $ionicSideMenuDelegate) {
         $scope.appversion = AppService.appversion();
 
         $scope.goToPage = function(page) {
             // console.log($rootScope.isTablet);
             if (!$rootScope.isTablet) {
-                $scope.sideMenuController.close();
+                $ionicSideMenuDelegate.toggleLeft(false);
             }
             $location.url('/' + page);
         };
 
         $scope.closeSideMenu = function() {
-            $scope.sideMenuController.close();
+            $ionicSideMenuDelegate.close();
         };
 
-        $scope.menuButtons = [
-            {
-                type: 'button-clear',
-                content: '<i class="icon ion-navicon"></i>',
-                tap: function(e) {
-                    $scope.sideMenuController.toggleLeft();
-                }
-            }
-        ];
-        $scope.backButtons = [
-            {
-                type: 'button-clear',
-                content: '<i class="icon ion-ios7-arrow-back"></i>',
-                tap: function(e) {
-                    $window.history.back();
-                }
-            }
-        ];
+        $scope.goBack = function() {
+            $window.history.back();
+        };
+
+        $scope.openLeftPanel = function() {
+            $ionicSideMenuDelegate.toggleLeft();
+        };
+
+        $scope.openRightPanel = function() {
+            $ionicSideMenuDelegate.toggleRight();
+        };
 
     })
 
